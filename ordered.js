@@ -1,8 +1,14 @@
-// ordered.js：升序插入与分裂点（基线：一律原样返回、分裂点给零）
+// ordered.js：升序插入与分裂点
 export function insertAt(list, key) {
-  return list;
+  const out = list.slice();
+  let spot = out.length;
+  for (let i = 0; i < out.length; i += 1) {
+    if (out[i] >= key) { spot = i; break; }
+  }
+  out.splice(spot, 0, key);
+  return out;
 }
 
 export function splitPoint(size) {
-  return 0;
+  return Math.ceil(size / 2);
 }
