@@ -1,0 +1,15 @@
+{
+  "budget": 3,
+  "capacity": 3,
+  "duplicate_error_code": "E_DUPLICATE_KEY",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "blocks": [], "pending": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "key", "key": 5 },
+    { "id": 2, "kind": "key", "key": 2 },
+    { "id": 3, "kind": "key", "key": 8 },
+    { "id": 4, "kind": "key", "key": 1 },
+    { "id": 5, "kind": "key", "key": 6 },
+    { "id": 6, "kind": "key", "key": 9 }
+  ]
+}
